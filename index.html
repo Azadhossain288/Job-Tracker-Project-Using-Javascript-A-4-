@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    
+    <!-- tailwind+daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-gray-100 min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Job<span class="text-blue-600">Tracker</span></h1>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-full">+ Add Job</button>
+    </header>
+
+    <!-- Stats -->
+    <div class="max-w-4xl mx-auto mt-6 grid grid-cols-3 gap-4 px-4">
+        <div class="bg-white rounded-xl p-4 shadow">
+            <p class="text-gray-500 text-sm">Total</p>
+            <h2 class="text-3xl font-bold" id="total">0</h2>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow">
+            <p class="text-gray-500 text-sm">Interview</p>
+            <h2 class="text-3xl font-bold text-green-500" id="interview-count">0</h2>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow">
+            <p class="text-gray-500 text-sm">Rejected</p>
+            <h2 class="text-3xl font-bold text-red-500" id="rejected-count">0</h2>
+        </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="max-w-4xl mx-auto mt-6 px-4">
+        <div class="bg-white rounded-xl shadow p-1 flex gap-1 w-fit">
+            <button class="filter-btn bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-semibold" data-filter="all">
+                All
+            </button>
+            <button class="filter-btn text-gray-500 px-5 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100" data-filter="interview">
+                Interview
+            </button>
+            <button class="filter-btn text-gray-500 px-5 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100" data-filter="rejected">
+                Rejected
+            </button>
+        </div>
+    </div>
+
+    <!-- Job List -->
+    <div class="max-w-4xl mx-auto mt-6 px-4 flex flex-col gap-4" id="job-list">
+        
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
