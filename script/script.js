@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 console.log("Job tracker");
 
 let jobs = [
@@ -75,6 +82,13 @@ function renderJobs(filter = 'all') {
   const jobList = document.getElementById('job-list');
 
   const filtered = filter === 'all' ? jobs : jobs.filter(j => j.status === filter);
+
+
+
+  const countLabel = document.getElementById('jobs-count-label');
+  countLabel.textContent = filter === 'all'
+  ? `${jobs.length} Jobs`
+  : `${filtered.length} of ${jobs.length} Jobs`;
 
   if (filtered.length === 0) {
     jobList.innerHTML = `
