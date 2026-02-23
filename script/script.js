@@ -8,7 +8,8 @@ let jobs = [
   { id: 5, company: 'AI Ventures', role: 'Machine Learning Engineer', location: 'Remote', type: 'Full-time', salary: '$150,000 - $200,000', status: 'not_applied', desc: 'Develop and deploy machine learning models for real-world applications.' },
   { id: 6, company: 'FinTech Labs', role: 'Frontend Developer', location: 'New York, NY', type: 'Full-time', salary: '$110,000 - $150,000', status: 'not_applied', desc: 'Create beautiful and fast frontend experiences for our fintech platform.' },
   { id: 7, company: 'DeepMind Studio', role: 'Machine Learning Engineer', location: 'San Francisco, CA', type: 'Full-time', salary: '$180,000 - $220,000', status: 'not_applied', desc: 'Research and implement deep learning algorithms for AI products.' },
-  { id: 8, company: 'GreenTech Solutions', role: 'Full Stack Developer', location: 'Seattle, WA', type: 'Full-time', salary: '$130,000 - $170,000', status: 'not_applied', desc: 'Work on sustainability-focused web apps using React and Python.' }
+  { id: 8, company: 'GreenTech Solutions', role: 'Full Stack Developer', location: 'Seattle, WA', type: 'Full-time', salary: '$130,000 - $170,000', status: 'not_applied', desc: 'Work on sustainability-focused web apps using React and Python.' },
+  { id: 9, company: 'Block, Inc. (Square)', role: 'Senior Software Engineer', location: 'San Francisco, CA (Remote)', type: 'Full-time', salary: '$165,000 - $210,000', status: 'not_applied', desc: 'Build secure, scalable financial systems and APIs using Golang, Ruby, and AWS.' }
   
 
 ];
